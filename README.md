@@ -1,6 +1,6 @@
 # TryHackMe Labs
 
-Every room I have completed on TryHackMe as **[Purushottam09](https://tryhackme.com/p/Purushottam09)** — 97 rooms, indexed by topic with a direct link and description for each.
+Every room I have completed on TryHackMe as **[Purushottam09](https://tryhackme.com/p/Purushottam09)** — 100 rooms, indexed by topic with a direct link and description for each.
 
 The path through these is deliberate: a SOC Level 1 → Level 2 blue-team track, now extending into identity and cloud monitoring, with enough offensive and CTF work alongside it to understand what the detections are looking at.
 
@@ -14,7 +14,7 @@ The path through these is deliberate: a SOC Level 1 → Level 2 blue-team track,
 | **Level** | 10 |
 | **Rank** | 76,081 (top 3%) |
 | **Points** | 13,384 |
-| **Rooms completed** | 97 |
+| **Rooms completed** | 100 |
 | **Badges** | 23 |
 | **Longest streak** | 23 days |
 | **League** | Gold |
@@ -24,7 +24,7 @@ The path through these is deliberate: a SOC Level 1 → Level 2 blue-team track,
 
 ## At a glance
 
-**97 rooms** · **~92 hours** of guided lab time · **10 topic areas**
+**100 rooms** · **~92 hours** of guided lab time · **10 topic areas**
 
 - **Difficulty** — Easy **57** · Medium **40**
 - **Format** — Walkthrough **85** · Challenge **12**
