@@ -2,10 +2,11 @@
 
 Red-side context — recon, exploitation frameworks, and boot-to-root style challenges.
 
-6 rooms · ~4 hours · [back to index](../README.md)
+7 rooms · ~4 hours · [back to index](../README.md)
 
 | Room | Difficulty | Format | Time | Description |
 |---|---|---|---|---|
+| [Offensive Security Intro](https://tryhackme.com/room/offensivesecurityintroc101) | Easy | Walkthrough | 15m | Introducing offensive security, where you will test the security of FakeBank's systems. |
 | [Simple CTF](https://tryhackme.com/room/easyctf) | Easy | Challenge | 45m | Beginner level CTF. |
 | [Boiler CTF](https://tryhackme.com/room/boilerctf2) | Medium | Challenge | 1h 15m | Intermediate level CTF. |
 | [Metasploit: Introduction](https://tryhackme.com/room/metasploitintro) | Easy | Walkthrough | 30m | An introduction to the main components of the Metasploit Framework. |
@@ -15,5 +16,5 @@ Red-side context — recon, exploitation frameworks, and boot-to-root style chal
 
 ## Key tools and skills
 
-`Linux` · `Web` · `Penetration testing` · `Vulnerability analysis` · `Red teaming` · `Exploit development` · `Application penetration testing` · `pattern_create` · `pattern_offset` · `Nmap` · `msfdb` · `OSINT`
+`Linux` · `Web` · `Penetration testing` · `Vulnerability analysis` · `Red teaming` · `Exploit development` · `dirb` · `DirBuster` · `Enumeration` · `Application penetration testing` · `pattern_create` · `pattern_offset`
 

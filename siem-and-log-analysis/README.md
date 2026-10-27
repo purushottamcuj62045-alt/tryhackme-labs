@@ -1,8 +1,8 @@
 # SIEM & Log Analysis
 
-Splunk and the Elastic Stack end to end — ingesting logs, writing SPL and KQL, building dashboards, and running investigations on top of them.
+Splunk and the Elastic Stack end to end — ingesting logs, writing SPL and KQL, building pipelines and dashboards, and running investigations on top of them.
 
-18 rooms · ~21 hours · [back to index](../README.md)
+22 rooms · ~25 hours · [back to index](../README.md)
 
 | Room | Difficulty | Format | Time | Description |
 |---|---|---|---|---|
@@ -18,14 +18,18 @@ Splunk and the Elastic Stack end to end — ingesting logs, writing SPL and KQL,
 | [Splunk: Setting up a SOC Lab](https://tryhackme.com/room/splunklab) | Medium | Walkthrough | 1h | Set up a Splunk lab and ingest logs with the Universal Forwarder. |
 | [Elastic Stack: The Basics](https://tryhackme.com/room/investigatingwithelk101) | Medium | Walkthrough | 3h | Understand how SOC analysts use the Elastic Stack (ELK) for log investigations. |
 | [Elastic: Query Languages](https://tryhackme.com/room/advancedelkqueries) | Medium | Walkthrough | 1h | Search large datasets efficiently with advanced queries in Kibana. |
+| [Elastic: Using Logstash](https://tryhackme.com/room/logstash) | Medium | Walkthrough | 1h | Learn how to collect, process, and transform data with Logstash. |
+| [Elastic: Using Elastic Defend](https://tryhackme.com/room/elasticdefend) | Medium | Walkthrough | 1h | Explore Elastic Defend telemetry and alerts to investigate endpoint activity. |
+| [Elastic: Setting up a SOC Lab](https://tryhackme.com/room/elasticlab) | Medium | Walkthrough | 1h | Set up a SOC lab with Elasticsearch, Kibana, and Fleet Server. |
 | [Log Analysis with SIEM](https://tryhackme.com/room/loganalysiswithsiem) | Medium | Walkthrough | 1h 30m | Learn how SIEM solutions can be used to detect and analyse malicious behaviour. |
 | [Alert Triage With Splunk](https://tryhackme.com/room/alerttriagewithsplunk) | Medium | Walkthrough | 1h | Use Splunk to triage alerts and investigate malicious activity efficiently. |
 | [Alert Triage With Elastic](https://tryhackme.com/room/alerttriagewithelastic) | Medium | Walkthrough | 1h | Investigate alerts with Elastic by analyzing logs and spotting threats. |
 | [Fixit](https://tryhackme.com/room/fixit) | Medium | Walkthrough | 1h | Fix the log parsing issue and analyze the logs in Splunk. |
 | [ItsyBitsy](https://tryhackme.com/room/itsybitsy) | Medium | Challenge | 30m | Put your ELK knowledge together and investigate an incident. |
+| [Slingshot](https://tryhackme.com/room/slingshot) | Easy | Walkthrough | 1h | Can you retrace an attacker's steps after they enumerate and compromise a web server? |
 | [Benign](https://tryhackme.com/room/benign) | Medium | Challenge | 2h 30m | Challenge room to investigate a compromised host. |
 
 ## Key tools and skills
 
-`Security operations` · `Splunk` · `SIEM engineering` · `Log correlation` · `Incident response` · `Linux` · `Security analysis` · `Windows` · `Detection engineering` · `Log analysis` · `Endpoint security monitoring` · `Log management`
+`Security operations` · `SIEM engineering` · `Linux` · `Splunk` · `Incident response` · `Log correlation` · `Security analysis` · `Log management` · `Log analysis` · `Windows` · `Detection engineering` · `Endpoint security monitoring`
 

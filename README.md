@@ -1,8 +1,8 @@
 # TryHackMe Labs
 
-Every room I have completed on TryHackMe as **[Purushottam09](https://tryhackme.com/p/Purushottam09)** — 84 rooms, indexed by topic with a direct link and description for each.
+Every room I have completed on TryHackMe as **[Purushottam09](https://tryhackme.com/p/Purushottam09)** — 97 rooms, indexed by topic with a direct link and description for each.
 
-The path through these is deliberate: a SOC Level 1 → Level 2 blue-team track, with enough offensive and CTF work alongside it to understand what the detections are looking at.
+The path through these is deliberate: a SOC Level 1 → Level 2 blue-team track, now extending into identity and cloud monitoring, with enough offensive and CTF work alongside it to understand what the detections are looking at.
 
 [![TryHackMe](https://tryhackme-badges.s3.amazonaws.com/Purushottam09.png)](https://tryhackme.com/p/Purushottam09)
 
@@ -11,54 +11,58 @@ The path through these is deliberate: a SOC Level 1 → Level 2 blue-team track,
 | | |
 |---|---|
 | **Profile** | [Purushottam09](https://tryhackme.com/p/Purushottam09) |
-| **Level** | 9 |
-| **Rank** | 87,583 (top 4%) |
-| **Points** | 11,964 |
-| **Rooms completed** | 85 |
-| **Badges** | 21 |
+| **Level** | 10 |
+| **Rank** | 76,081 (top 3%) |
+| **Points** | 13,384 |
+| **Rooms completed** | 97 |
+| **Badges** | 23 |
 | **Longest streak** | 23 days |
-| **League** | Silver |
-| **Capability score** | 56 (Blue team) |
+| **League** | Gold |
+| **Capability score** | 59.55 (Blue team) |
 | **Member since** | 2025-12-20 |
+| **Index last updated** | 2026-10-27 |
 
 ## At a glance
 
-**84 rooms** · **~80 hours** of guided lab time · **9 topic areas**
+**97 rooms** · **~92 hours** of guided lab time · **10 topic areas**
 
-- **Difficulty** — Easy **54** · Medium **30**
-- **Format** — Walkthrough **72** · Challenge **12**
-- **Perspective** — Blue **76** · Red **7** · Purple **1**
+- **Difficulty** — Easy **57** · Medium **40**
+- **Format** — Walkthrough **85** · Challenge **12**
+- **Perspective** — Blue **87** · Red **8** · Purple **2**
 
 ### Tooling covered
 
 | Tool / platform | Rooms |
 |---|---:|
-| Windows | 24 |
-| Linux | 23 |
-| Web | 15 |
-| Splunk | 13 |
+| Windows | 28 |
+| Linux | 27 |
+| Splunk | 20 |
+| Web | 17 |
 | Wireshark | 9 |
+| ELK Stack | 7 |
+| Active Directory | 5 |
 | PhishTool | 4 |
-| Windows Event Viewer | 4 |
-| ELK Stack | 3 |
 | Snort | 3 |
 | Nmap | 3 |
 | VirusTotal | 3 |
+| Entra ID | 2 |
+| Azure | 1 |
 | PowerShell | 1 |
 
 ## Topics
 
 | Topic | Rooms | Focus |
 |---|---:|---|
-| **[SOC Fundamentals & Analyst Workflow](soc-fundamentals/)** | 13 | The analyst's job itself — what an L1/L2 day looks like, how alerts are triaged, escalated and reported, and how a SOC measures itself. |
-| **[SIEM & Log Analysis](siem-and-log-analysis/)** | 18 | Splunk and the Elastic Stack end to end — ingesting logs, writing SPL and KQL, building dashboards, and running investigations on top of them. |
+| **[SOC Fundamentals & Analyst Workflow](soc-fundamentals/)** | 14 | The analyst's job itself — what an L1/L2 day looks like, how alerts are triaged, escalated and reported, and how a SOC measures itself. |
+| **[SIEM & Log Analysis](siem-and-log-analysis/)** | 22 | Splunk and the Elastic Stack end to end — ingesting logs, writing SPL and KQL, building pipelines and dashboards, and running investigations on top of them. |
 | **[Threat Detection & Hunting](threat-detection/)** | 14 | Attacker behaviour on Windows and Linux mapped to the artefacts it leaves behind, and the detection logic that catches it. |
+| **[Active Directory, M365 & Entra ID](identity-and-cloud-security/)** | 7 | Identity-layer monitoring — auditing Active Directory, detecting the full AD attack chain in Splunk, and extending the same work into M365 and Entra ID. |
 | **[Network Traffic Analysis](network-traffic-analysis/)** | 7 | Packet-level work — Wireshark, Snort, NetworkMiner, and the monitoring practices that sit around them. |
 | **[Web Security](web-security/)** | 5 | How web applications are attacked and how those attacks surface in server logs and traffic. |
 | **[Threat Intelligence & Frameworks](threat-intelligence/)** | 8 | The models analysts reason with — Kill Chain, Unified Kill Chain, Pyramid of Pain, MITRE ATT&CK — plus practical artefact enrichment. |
 | **[Phishing & Email Analysis](phishing-and-email-analysis/)** | 6 | Email structure, header and attachment analysis, phishing indicators, and a full campaign investigation. |
 | **[Malware Analysis & DFIR](malware-and-dfir/)** | 7 | Triaging suspicious binaries and reconstructing full intrusions from host and network evidence. |
-| **[Offensive Security & CTF](offensive-security-and-ctf/)** | 6 | Red-side context — recon, exploitation frameworks, and boot-to-root style challenges. |
+| **[Offensive Security & CTF](offensive-security-and-ctf/)** | 7 | Red-side context — recon, exploitation frameworks, and boot-to-root style challenges. |
 
 ## All rooms
 
@@ -66,6 +70,7 @@ The path through these is deliberate: a SOC Level 1 → Level 2 blue-team track,
 |---|---|---|---|---|---|
 | [Junior Security Analyst Intro](https://tryhackme.com/room/jrsecanalystintrouxo) | [SOC Fundamentals & Analyst Workflow](soc-fundamentals/) | Easy | Walkthrough | 15m | Play through a day in the life of a Security Analyst and experience their everyday duties. |
 | [Defensive Security Intro](https://tryhackme.com/room/defensivesecurityintroQR) | [SOC Fundamentals & Analyst Workflow](soc-fundamentals/) | Easy | Walkthrough | 15m | Introducing defensive security, what it involves and looks like within the real-world, as well as the technologies involved. |
+| [Search Skills](https://tryhackme.com/room/searchskillscS) | [SOC Fundamentals & Analyst Workflow](soc-fundamentals/) | Easy | Walkthrough | 15m | Learn to efficiently search the Internet and use specialised services and technical docs for information. |
 | [SOC Role in Blue Team](https://tryhackme.com/room/socroleinblueteam) | [SOC Fundamentals & Analyst Workflow](soc-fundamentals/) | Easy | Walkthrough | 30m | Discover security roles and learn how to advance your SOC career, starting from the L1 analyst. |
 | [SOC L1 Alert Triage](https://tryhackme.com/room/socl1alerttriage) | [SOC Fundamentals & Analyst Workflow](soc-fundamentals/) | Easy | Walkthrough | 1h | Learn more about SOC alerts and build a systematic approach to efficiently triaging them. |
 | [SOC L1 Alert Reporting](https://tryhackme.com/room/socl1alertreporting) | [SOC Fundamentals & Analyst Workflow](soc-fundamentals/) | Easy | Walkthrough | 1h | Learn how to properly report, escalate, and communicate about high-risk SOC alerts. |
@@ -89,11 +94,15 @@ The path through these is deliberate: a SOC Level 1 → Level 2 blue-team track,
 | [Splunk: Setting up a SOC Lab](https://tryhackme.com/room/splunklab) | [SIEM & Log Analysis](siem-and-log-analysis/) | Medium | Walkthrough | 1h | Set up a Splunk lab and ingest logs with the Universal Forwarder. |
 | [Elastic Stack: The Basics](https://tryhackme.com/room/investigatingwithelk101) | [SIEM & Log Analysis](siem-and-log-analysis/) | Medium | Walkthrough | 3h | Understand how SOC analysts use the Elastic Stack (ELK) for log investigations. |
 | [Elastic: Query Languages](https://tryhackme.com/room/advancedelkqueries) | [SIEM & Log Analysis](siem-and-log-analysis/) | Medium | Walkthrough | 1h | Search large datasets efficiently with advanced queries in Kibana. |
+| [Elastic: Using Logstash](https://tryhackme.com/room/logstash) | [SIEM & Log Analysis](siem-and-log-analysis/) | Medium | Walkthrough | 1h | Learn how to collect, process, and transform data with Logstash. |
+| [Elastic: Using Elastic Defend](https://tryhackme.com/room/elasticdefend) | [SIEM & Log Analysis](siem-and-log-analysis/) | Medium | Walkthrough | 1h | Explore Elastic Defend telemetry and alerts to investigate endpoint activity. |
+| [Elastic: Setting up a SOC Lab](https://tryhackme.com/room/elasticlab) | [SIEM & Log Analysis](siem-and-log-analysis/) | Medium | Walkthrough | 1h | Set up a SOC lab with Elasticsearch, Kibana, and Fleet Server. |
 | [Log Analysis with SIEM](https://tryhackme.com/room/loganalysiswithsiem) | [SIEM & Log Analysis](siem-and-log-analysis/) | Medium | Walkthrough | 1h 30m | Learn how SIEM solutions can be used to detect and analyse malicious behaviour. |
 | [Alert Triage With Splunk](https://tryhackme.com/room/alerttriagewithsplunk) | [SIEM & Log Analysis](siem-and-log-analysis/) | Medium | Walkthrough | 1h | Use Splunk to triage alerts and investigate malicious activity efficiently. |
 | [Alert Triage With Elastic](https://tryhackme.com/room/alerttriagewithelastic) | [SIEM & Log Analysis](siem-and-log-analysis/) | Medium | Walkthrough | 1h | Investigate alerts with Elastic by analyzing logs and spotting threats. |
 | [Fixit](https://tryhackme.com/room/fixit) | [SIEM & Log Analysis](siem-and-log-analysis/) | Medium | Walkthrough | 1h | Fix the log parsing issue and analyze the logs in Splunk. |
 | [ItsyBitsy](https://tryhackme.com/room/itsybitsy) | [SIEM & Log Analysis](siem-and-log-analysis/) | Medium | Challenge | 30m | Put your ELK knowledge together and investigate an incident. |
+| [Slingshot](https://tryhackme.com/room/slingshot) | [SIEM & Log Analysis](siem-and-log-analysis/) | Easy | Walkthrough | 1h | Can you retrace an attacker's steps after they enumerate and compromise a web server? |
 | [Benign](https://tryhackme.com/room/benign) | [SIEM & Log Analysis](siem-and-log-analysis/) | Medium | Challenge | 2h 30m | Challenge room to investigate a compromised host. |
 | [Introduction to EDR](https://tryhackme.com/room/introductiontoedrs) | [Threat Detection & Hunting](threat-detection/) | Easy | Walkthrough | 1h | Learn the fundamentals of EDR and explore its features and working. |
 | [IDS Fundamentals](https://tryhackme.com/room/idsfundamentals) | [Threat Detection & Hunting](threat-detection/) | Easy | Walkthrough | 1h | Learn the fundamentals of IDS, along with the experience of working with Snort. |
@@ -109,6 +118,13 @@ The path through these is deliberate: a SOC Level 1 → Level 2 blue-team track,
 | [Data Exfiltration Detection](https://tryhackme.com/room/dataexfildetection) | [Threat Detection & Hunting](threat-detection/) | Medium | Walkthrough | 1h | Learn how to detect data exfiltration attempts in various network channels. |
 | [Eviction](https://tryhackme.com/room/eviction) | [Threat Detection & Hunting](threat-detection/) | Easy | Walkthrough | 45m | Unearth the monster from under your bed. |
 | [Summit](https://tryhackme.com/room/summit) | [Threat Detection & Hunting](threat-detection/) | Easy | Challenge | 30m | Can you chase a simulated adversary up the Pyramid of Pain until they finally back down? |
+| [Monitoring Active Directory](https://tryhackme.com/room/monitoringactivedirectory) | [Active Directory, M365 & Entra ID](identity-and-cloud-security/) | Medium | Walkthrough | 1h | Learn to monitor Active Directory and find anomalies in high-volume logs. |
+| [Detecting AD Initial Access](https://tryhackme.com/room/detectingadinitialaccess) | [Active Directory, M365 & Entra ID](identity-and-cloud-security/) | Medium | Walkthrough | 1h | Detect AD initial access attacks by analyzing IIS, NPS, and Windows Security logs. |
+| [Detecting AD Credential Attacks](https://tryhackme.com/room/detectingadcredentialattacks) | [Active Directory, M365 & Entra ID](identity-and-cloud-security/) | Medium | Walkthrough | 1h 30m | Detect Kerberoasting, AS-REP Roasting, LSASS dumping, DCSync, and NTDS.dit extraction in Splunk. |
+| [Detecting AD Lateral Movement](https://tryhackme.com/room/detectingadlateralmovement) | [Active Directory, M365 & Entra ID](identity-and-cloud-security/) | Medium | Walkthrough | 1h | Learn to detect SMB, PsExec, and RDP lateral movement through Windows Event Logs and Splunk. |
+| [Detecting AD Post-Exploitation](https://tryhackme.com/room/detectingadpostexploitation) | [Active Directory, M365 & Entra ID](identity-and-cloud-security/) | Medium | Walkthrough | 1h 30m | Discover how to detect post-exploitation activity in an Active Directory environment. |
+| [M365 Monitoring Basics](https://tryhackme.com/room/m365monitoringbasics) | [Active Directory, M365 & Entra ID](identity-and-cloud-security/) | Medium | Walkthrough | 45m | Learn the importance of Entra ID and M365 in modern SOC environments and explore their logs. |
+| [Entra ID Monitoring](https://tryhackme.com/room/entraidmonitoring) | [Active Directory, M365 & Entra ID](identity-and-cloud-security/) | Medium | Walkthrough | 1h | Learn the main threats and defenses in Entra ID environments and how to detect them. |
 | [Network Traffic Basics](https://tryhackme.com/room/networktrafficbasics) | [Network Traffic Analysis](network-traffic-analysis/) | Easy | Walkthrough | 1h | Learn what network analysis is, why it is essential, how to collect network traffic and which tools are available. |
 | [Wireshark: The Basics](https://tryhackme.com/room/wiresharkthebasics) | [Network Traffic Analysis](network-traffic-analysis/) | Easy | Walkthrough | 1h | Learn the basics of Wireshark and how to analyse protocols and PCAPs. |
 | [Wireshark: Packet Operations](https://tryhackme.com/room/wiresharkpacketoperations) | [Network Traffic Analysis](network-traffic-analysis/) | Easy | Walkthrough | 1h | Learn the fundamentals of packet analysis with Wireshark and how to find the needle in the haystack! |
@@ -142,6 +158,7 @@ The path through these is deliberate: a SOC Level 1 → Level 2 blue-team track,
 | [Boogeyman 1](https://tryhackme.com/room/boogeyman1) | [Malware Analysis & DFIR](malware-and-dfir/) | Medium | Walkthrough | 2h | A new threat actor emerges from the wild using the name Boogeyman. Are you afraid of the Boogeyman? |
 | [Boogeyman 2](https://tryhackme.com/room/boogeyman2) | [Malware Analysis & DFIR](malware-and-dfir/) | Medium | Challenge | 1h | The Boogeyman is back. Are you still afraid of the Boogeyman? |
 | [Boogeyman 3](https://tryhackme.com/room/boogeyman3) | [Malware Analysis & DFIR](malware-and-dfir/) | Medium | Challenge | 1h | The Boogeyman emerges from the darkness again. |
+| [Offensive Security Intro](https://tryhackme.com/room/offensivesecurityintroc101) | [Offensive Security & CTF](offensive-security-and-ctf/) | Easy | Walkthrough | 15m | Introducing offensive security, where you will test the security of FakeBank's systems. |
 | [Simple CTF](https://tryhackme.com/room/easyctf) | [Offensive Security & CTF](offensive-security-and-ctf/) | Easy | Challenge | 45m | Beginner level CTF. |
 | [Boiler CTF](https://tryhackme.com/room/boilerctf2) | [Offensive Security & CTF](offensive-security-and-ctf/) | Medium | Challenge | 1h 15m | Intermediate level CTF. |
 | [Metasploit: Introduction](https://tryhackme.com/room/metasploitintro) | [Offensive Security & CTF](offensive-security-and-ctf/) | Easy | Walkthrough | 30m | An introduction to the main components of the Metasploit Framework. |
@@ -151,7 +168,7 @@ The path through these is deliberate: a SOC Level 1 → Level 2 blue-team track,
 
 ## Badges earned
 
-`first-step-into-soc` · `soc-apprentice` · `soc-sim-first-alert-closed` · `soc-sim-first-scenario-completed` · `3-day-streak` · `defensive-toolsmith` · `skilled-navigator` · `phishing` · `7-day-streak` · `silver-league` · `wireshark` · `network-hog` · `web-defender` · `windows-guardian` · `linux-guardian` · `malware-explorer` · `lookup-champion` · `to-benign-or-not-benign` · `boogeyman-slayer` · `soc-level-up` · `advanced-splunk`
+`first-step-into-soc` · `soc-apprentice` · `soc-sim-first-alert-closed` · `soc-sim-first-scenario-completed` · `3-day-streak` · `defensive-toolsmith` · `skilled-navigator` · `phishing` · `7-day-streak` · `silver-league` · `wireshark` · `network-hog` · `web-defender` · `windows-guardian` · `linux-guardian` · `malware-explorer` · `lookup-champion` · `to-benign-or-not-benign` · `boogeyman-slayer` · `soc-level-up` · `advanced-splunk` · `advanced-elk` · `domain-guardian`
 
 ## Repo layout
 
@@ -159,22 +176,23 @@ The path through these is deliberate: a SOC Level 1 → Level 2 blue-team track,
 tryhackme-labs/
 ├── README.md                    # this index
 ├── rooms.json                   # machine-readable room data
-├── soc-fundamentals/            # 13 rooms
-├── siem-and-log-analysis/       # 18 rooms
+├── soc-fundamentals/            # 14 rooms
+├── siem-and-log-analysis/       # 22 rooms
 ├── threat-detection/            # 14 rooms
+├── identity-and-cloud-security/ # 7 rooms
 ├── network-traffic-analysis/    # 7 rooms
 ├── web-security/                # 5 rooms
 ├── threat-intelligence/         # 8 rooms
 ├── phishing-and-email-analysis/ # 6 rooms
 ├── malware-and-dfir/            # 7 rooms
-└── offensive-security-and-ctf/  # 6 rooms
+└── offensive-security-and-ctf/  # 7 rooms
 ```
 
 Each topic folder has its own README listing that topic's rooms — same links and descriptions, scoped so a single area is easy to skim.
 
 ## Notes
 
-- The TryHackMe profile counter reports **85** completed rooms; the public API returns **84**. One room is not exposed publicly (typically a retired, unpublished, or event-only room), so it is not listed here.
+- Room count matches the TryHackMe profile counter exactly (97).
 - `rooms.json` holds the same data in structured form if you want to reuse it elsewhere.
-- Room links point at TryHackMe; no flags, answers, or paywalled content are reproduced in this repo.
+- Room links point at TryHackMe; no flags, answers, or paywalled content are reproduced here.
 

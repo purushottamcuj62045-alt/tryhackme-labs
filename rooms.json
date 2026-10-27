@@ -2,17 +2,18 @@
   "profile": {
     "username": "Purushottam09",
     "url": "https://tryhackme.com/p/Purushottam09",
-    "level": 9,
-    "rank": 87583,
-    "top_percentage": 4,
-    "points": 11964,
-    "badges": 21,
-    "completed_rooms_reported": 85,
+    "level": 10,
+    "rank": 76081,
+    "top_percentage": 3,
+    "points": 13384,
+    "badges": 23,
+    "completed_rooms_reported": 97,
     "largest_streak": 23,
-    "league": "Silver",
-    "capability_score": 56,
+    "league": "Gold",
+    "capability_score": 59.55,
     "capability_pov": "Blue",
     "joined": "2025-12-20",
+    "last_updated": "2026-10-27",
     "badge_image": "https://tryhackme-badges.s3.amazonaws.com/Purushottam09.png"
   },
   "badges": [
@@ -36,10 +37,12 @@
     "to-benign-or-not-benign",
     "boogeyman-slayer",
     "soc-level-up",
-    "advanced-splunk"
+    "advanced-splunk",
+    "advanced-elk",
+    "domain-guardian"
   ],
   "generated_from": "TryHackMe public profile API",
-  "room_count": 84,
+  "room_count": 97,
   "categories": [
     {
       "slug": "soc-fundamentals",
@@ -48,6 +51,7 @@
       "rooms": [
         "Junior Security Analyst Intro",
         "Defensive Security Intro",
+        "Search Skills",
         "SOC Role in Blue Team",
         "SOC L1 Alert Triage",
         "SOC L1 Alert Reporting",
@@ -64,7 +68,7 @@
     {
       "slug": "siem-and-log-analysis",
       "name": "SIEM & Log Analysis",
-      "description": "Splunk and the Elastic Stack end to end — ingesting logs, writing SPL and KQL, building dashboards, and running investigations on top of them.",
+      "description": "Splunk and the Elastic Stack end to end — ingesting logs, writing SPL and KQL, building pipelines and dashboards, and running investigations on top of them.",
       "rooms": [
         "Introduction to SIEM",
         "Introduction to SOAR",
@@ -78,11 +82,15 @@
         "Splunk: Setting up a SOC Lab",
         "Elastic Stack: The Basics",
         "Elastic: Query Languages",
+        "Elastic: Using Logstash",
+        "Elastic: Using Elastic Defend",
+        "Elastic: Setting up a SOC Lab",
         "Log Analysis with SIEM",
         "Alert Triage With Splunk",
         "Alert Triage With Elastic",
         "Fixit",
         "ItsyBitsy",
+        "Slingshot",
         "Benign"
       ]
     },
@@ -105,6 +113,20 @@
         "Data Exfiltration Detection",
         "Eviction",
         "Summit"
+      ]
+    },
+    {
+      "slug": "identity-and-cloud-security",
+      "name": "Active Directory, M365 & Entra ID",
+      "description": "Identity-layer monitoring — auditing Active Directory, detecting the full AD attack chain in Splunk, and extending the same work into M365 and Entra ID.",
+      "rooms": [
+        "Monitoring Active Directory",
+        "Detecting AD Initial Access",
+        "Detecting AD Credential Attacks",
+        "Detecting AD Lateral Movement",
+        "Detecting AD Post-Exploitation",
+        "M365 Monitoring Basics",
+        "Entra ID Monitoring"
       ]
     },
     {
@@ -180,6 +202,7 @@
       "name": "Offensive Security & CTF",
       "description": "Red-side context — recon, exploitation frameworks, and boot-to-root style challenges.",
       "rooms": [
+        "Offensive Security Intro",
         "Simple CTF",
         "Boiler CTF",
         "Metasploit: Introduction",
@@ -207,10 +230,42 @@
       ]
     },
     {
-      "title": "Pyramid Of Pain",
-      "code": "pyramidofpainax",
-      "url": "https://tryhackme.com/room/pyramidofpainax",
-      "description": "Learn what the Pyramid of Pain is and how it ranks indicators by how painful they are for an adversary to change.",
+      "title": "Defensive Security Intro",
+      "code": "defensivesecurityintroQR",
+      "url": "https://tryhackme.com/room/defensivesecurityintroQR",
+      "description": "Introducing defensive security, what it involves and looks like within the real-world, as well as the technologies involved.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 15,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Windows",
+        "Security operations",
+        "Security analysis",
+        "Incident response"
+      ]
+    },
+    {
+      "title": "Search Skills",
+      "code": "searchskillscS",
+      "url": "https://tryhackme.com/room/searchskillscS",
+      "description": "Learn to efficiently search the Internet and use specialised services and technical docs for information.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 15,
+      "pov": [],
+      "tech": [
+        "OSINT",
+        "Information gathering"
+      ]
+    },
+    {
+      "title": "SOC Role in Blue Team",
+      "code": "socroleinblueteam",
+      "url": "https://tryhackme.com/room/socroleinblueteam",
+      "description": "Discover security roles and learn how to advance your SOC career, starting from the L1 analyst.",
       "difficulty": "easy",
       "type": "walkthrough",
       "minutes": 30,
@@ -218,106 +273,6 @@
         "Blue"
       ],
       "tech": [
-        "Windows",
-        "Snort",
-        "Security analysis",
-        "Security operations",
-        "Incident response",
-        "Packet analysis"
-      ]
-    },
-    {
-      "title": "Cyber Kill Chain",
-      "code": "cyberkillchainzmt",
-      "url": "https://tryhackme.com/room/cyberkillchainzmt",
-      "description": "The Cyber Kill Chain framework is designed for identification and prevention of the network intrusions. You will learn what the adversaries need to do in order to achieve their goals.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 45,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Crowdstrike",
-        "Incident management",
-        "Incident handling",
-        "OSINT"
-      ]
-    },
-    {
-      "title": "Elastic Stack: The Basics",
-      "code": "investigatingwithelk101",
-      "url": "https://tryhackme.com/room/investigatingwithelk101",
-      "description": "Understand how SOC analysts use the Elastic Stack (ELK) for log investigations.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 180,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Linux",
-        "Security analysis",
-        "Security operations",
-        "Threat hunting",
-        "SIEM engineering"
-      ]
-    },
-    {
-      "title": "Introduction to SIEM",
-      "code": "introtosiem",
-      "url": "https://tryhackme.com/room/introtosiem",
-      "description": "Learn the fundamentals of SIEM and explore its features and functionality.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 120,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Windows",
-        "Splunk",
-        "Event Viewer",
-        "QRadar",
-        "Security operations",
-        "Incident response",
-        "Incident handling",
-        "Detection engineering",
-        "SIEM engineering",
-        "Endpoint security monitoring"
-      ]
-    },
-    {
-      "title": "Introduction to SOAR",
-      "code": "soar",
-      "url": "https://tryhackme.com/room/soar",
-      "description": "Learn the concepts and methodology surrounding security orchestration, automation, and response.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Security operations",
-        "Incident response",
-        "Detection engineering",
-        "SOAR development"
-      ]
-    },
-    {
-      "title": "Splunk: The Basics",
-      "code": "splunk101",
-      "url": "https://tryhackme.com/room/splunk101",
-      "description": "Understand how SOC analysts use Splunk for log investigations.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 30,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Splunk",
         "Security operations"
       ]
     },
@@ -421,10 +376,10 @@
       ]
     },
     {
-      "title": "SOC Role in Blue Team",
-      "code": "socroleinblueteam",
-      "url": "https://tryhackme.com/room/socroleinblueteam",
-      "description": "Discover security roles and learn how to advance your SOC career, starting from the L1 analyst.",
+      "title": "Senior Security Analyst Intro",
+      "code": "seniorsecanalystintro",
+      "url": "https://tryhackme.com/room/seniorsecanalystintro",
+      "description": "Explore the duties and exciting opportunities of a SOC Level 2 analyst.",
       "difficulty": "easy",
       "type": "walkthrough",
       "minutes": 30,
@@ -432,25 +387,509 @@
         "Blue"
       ],
       "tech": [
-        "Security operations"
+        "Security analysis"
       ]
     },
     {
-      "title": "Defensive Security Intro",
-      "code": "defensivesecurityintroQR",
-      "url": "https://tryhackme.com/room/defensivesecurityintroQR",
-      "description": "Introducing defensive security, what it involves and looks like within the real-world, as well as the technologies involved.",
+      "title": "SOC L2 Alert Triage",
+      "code": "socl2alerttriage",
+      "url": "https://tryhackme.com/room/socl2alerttriage",
+      "description": "Learn how to triage escalated alerts and respond to cyber threats.",
       "difficulty": "easy",
       "type": "walkthrough",
-      "minutes": 15,
+      "minutes": 45,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Security analysis"
+      ]
+    },
+    {
+      "title": "Report Writing for SOC L2",
+      "code": "reportwritingsocl2",
+      "url": "https://tryhackme.com/room/reportwritingsocl2",
+      "description": "Explore a vital skill for any senior role in a SOC: report writing.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 30,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Security analysis",
+        "Communication",
+        "SOC",
+        "Report writing"
+      ]
+    },
+    {
+      "title": "Defensive Security Trends",
+      "code": "defensivesecuritytrends",
+      "url": "https://tryhackme.com/room/defensivesecuritytrends",
+      "description": "Explore the modern security landscape and learn from emerging trends.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 45,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Threat intelligence",
+        "Defensive security"
+      ]
+    },
+    {
+      "title": "Introduction to SIEM",
+      "code": "introtosiem",
+      "url": "https://tryhackme.com/room/introtosiem",
+      "description": "Learn the fundamentals of SIEM and explore its features and functionality.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 120,
       "pov": [
         "Blue"
       ],
       "tech": [
         "Windows",
+        "Splunk",
+        "Event Viewer",
+        "QRadar",
+        "Security operations",
+        "Incident response",
+        "Incident handling",
+        "Detection engineering",
+        "SIEM engineering",
+        "Endpoint security monitoring"
+      ]
+    },
+    {
+      "title": "Introduction to SOAR",
+      "code": "soar",
+      "url": "https://tryhackme.com/room/soar",
+      "description": "Learn the concepts and methodology surrounding security orchestration, automation, and response.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Security operations",
+        "Incident response",
+        "Detection engineering",
+        "SOAR development"
+      ]
+    },
+    {
+      "title": "Intro to Logs",
+      "code": "introtologs",
+      "url": "https://tryhackme.com/room/introtologs",
+      "description": "Learn the fundamentals of logging, data sources, collection methods and principles to step into the log analysis world.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 30,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Linux",
+        "Log Viewer",
+        "Security analysis",
+        "Security operations",
+        "Incident response",
+        "Digital forensics",
+        "Incident handling",
+        "Log management",
+        "Log correlation"
+      ]
+    },
+    {
+      "title": "Windows Logging for SOC",
+      "code": "windowsloggingforsoc",
+      "url": "https://tryhackme.com/room/windowsloggingforsoc",
+      "description": "Start your Windows monitoring journey by learning how to use system logs to detect threats.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Windows",
+        "Windows Event Viewer",
+        "Security analysis",
+        "Log analysis",
+        "Log correlation"
+      ]
+    },
+    {
+      "title": "Linux Logging for SOC",
+      "code": "linuxloggingforsoc",
+      "url": "https://tryhackme.com/room/linuxloggingforsoc",
+      "description": "Explore key Linux log sources and learn how to use them in your SOC triage.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 45,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Linux",
+        "Log analysis",
+        "Log correlation",
+        "Security analysis"
+      ]
+    },
+    {
+      "title": "Splunk: The Basics",
+      "code": "splunk101",
+      "url": "https://tryhackme.com/room/splunk101",
+      "description": "Understand how SOC analysts use Splunk for log investigations.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 30,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Splunk",
+        "Security operations"
+      ]
+    },
+    {
+      "title": "Splunk: Exploring SPL",
+      "code": "splunkexploringspl",
+      "url": "https://tryhackme.com/room/splunkexploringspl",
+      "description": "Learn and explore Splunk's Search Processing Language.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Windows",
+        "Splunk",
+        "Security analysis",
+        "Log analysis"
+      ]
+    },
+    {
+      "title": "Splunk: Data Manipulation",
+      "code": "splunkdatamanipulation",
+      "url": "https://tryhackme.com/room/splunkdatamanipulation",
+      "description": "Learn how to parse and manipulate data in Splunk.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 90,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Splunk",
+        "Security operations",
+        "Incident response",
+        "Incident management",
+        "Detection engineering",
+        "SIEM engineering",
+        "Log management",
+        "Endpoint security monitoring",
+        "Log correlation"
+      ]
+    },
+    {
+      "title": "Splunk: Dashboards and Reports",
+      "code": "splunkdashboardsandreports",
+      "url": "https://tryhackme.com/room/splunkdashboardsandreports",
+      "description": "Explore reports, alerts, and dashboards with Splunk.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 45,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Splunk",
+        "Security operations",
+        "Incident response",
+        "Incident management",
+        "Detection engineering",
+        "SIEM engineering",
+        "Log management",
+        "Endpoint security monitoring",
+        "Log correlation"
+      ]
+    },
+    {
+      "title": "Splunk: Setting up a SOC Lab",
+      "code": "splunklab",
+      "url": "https://tryhackme.com/room/splunklab",
+      "description": "Set up a Splunk lab and ingest logs with the Universal Forwarder.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Windows",
+        "Linux",
+        "Splunk",
+        "Security operations",
+        "Incident response",
+        "Incident management",
+        "Detection engineering",
+        "SIEM engineering",
+        "Log management",
+        "Endpoint security monitoring",
+        "Log correlation"
+      ]
+    },
+    {
+      "title": "Elastic Stack: The Basics",
+      "code": "investigatingwithelk101",
+      "url": "https://tryhackme.com/room/investigatingwithelk101",
+      "description": "Understand how SOC analysts use the Elastic Stack (ELK) for log investigations.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 180,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Linux",
+        "Security analysis",
+        "Security operations",
+        "Threat hunting",
+        "SIEM engineering"
+      ]
+    },
+    {
+      "title": "Elastic: Query Languages",
+      "code": "advancedelkqueries",
+      "url": "https://tryhackme.com/room/advancedelkqueries",
+      "description": "Search large datasets efficiently with advanced queries in Kibana.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "ELK Stack",
+        "RegExr",
+        "Security analysis",
+        "Incident response",
+        "Digital forensics",
+        "SIEM engineering",
+        "Endpoint security monitoring"
+      ]
+    },
+    {
+      "title": "Elastic: Using Logstash",
+      "code": "logstash",
+      "url": "https://tryhackme.com/room/logstash",
+      "description": "Learn how to collect, process, and transform data with Logstash.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Linux",
+        "ELK Stack (Elasticsearch, Logstash, Kibana)",
+        "Security operations",
+        "Incident response",
+        "Digital forensics",
+        "Detection engineering",
+        "SIEM engineering",
+        "Log management",
+        "Log correlation"
+      ]
+    },
+    {
+      "title": "Elastic: Using Elastic Defend",
+      "code": "elasticdefend",
+      "url": "https://tryhackme.com/room/elasticdefend",
+      "description": "Explore Elastic Defend telemetry and alerts to investigate endpoint activity.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Linux",
+        "ELK Stack (Elasticsearch, Logstash, Kibana)",
+        "Security operations",
+        "SIEM engineering",
+        "Log management",
+        "Log analysis"
+      ]
+    },
+    {
+      "title": "Elastic: Setting up a SOC Lab",
+      "code": "elasticlab",
+      "url": "https://tryhackme.com/room/elasticlab",
+      "description": "Set up a SOC lab with Elasticsearch, Kibana, and Fleet Server.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Linux",
+        "Web",
+        "ELK Stack (Elasticsearch, Logstash, Kibana)",
+        "Security operations",
+        "SIEM engineering",
+        "Log management",
+        "Log analysis"
+      ]
+    },
+    {
+      "title": "Log Analysis with SIEM",
+      "code": "loganalysiswithsiem",
+      "url": "https://tryhackme.com/room/loganalysiswithsiem",
+      "description": "Learn how SIEM solutions can be used to detect and analyse malicious behaviour.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 90,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Windows",
+        "Linux",
+        "Web",
+        "Splunk",
+        "Log analysis",
+        "Log correlation"
+      ]
+    },
+    {
+      "title": "Alert Triage With Splunk",
+      "code": "alerttriagewithsplunk",
+      "url": "https://tryhackme.com/room/alerttriagewithsplunk",
+      "description": "Use Splunk to triage alerts and investigate malicious activity efficiently.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Windows",
+        "Linux",
+        "Web",
+        "Splunk",
+        "Log analysis",
+        "Log correlation",
+        "SIEM engineering"
+      ]
+    },
+    {
+      "title": "Alert Triage With Elastic",
+      "code": "alerttriagewithelastic",
+      "url": "https://tryhackme.com/room/alerttriagewithelastic",
+      "description": "Investigate alerts with Elastic by analyzing logs and spotting threats.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Web",
+        "Windows",
+        "ELK Stack (Elasticsearch, Logstash, Kibana)",
+        "Log analysis"
+      ]
+    },
+    {
+      "title": "Fixit",
+      "code": "fixit",
+      "url": "https://tryhackme.com/room/fixit",
+      "description": "Fix the log parsing issue and analyze the logs in Splunk.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Linux",
         "Security operations",
         "Security analysis",
-        "Incident response"
+        "Incident response",
+        "Detection engineering",
+        "SIEM engineering",
+        "Log management",
+        "System administration",
+        "Log correlation"
+      ]
+    },
+    {
+      "title": "ItsyBitsy",
+      "code": "itsybitsy",
+      "url": "https://tryhackme.com/room/itsybitsy",
+      "description": "Put your ELK knowledge together and investigate an incident.",
+      "difficulty": "medium",
+      "type": "challenge",
+      "minutes": 30,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Linux",
+        "Splunk",
+        "Security operations",
+        "Malware analysis",
+        "SIEM engineering"
+      ]
+    },
+    {
+      "title": "Slingshot",
+      "code": "slingshot",
+      "url": "https://tryhackme.com/room/slingshot",
+      "description": "Can you retrace an attacker's steps after they enumerate and compromise a web server?",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "ELK Stack",
+        "Security operations",
+        "Incident response",
+        "Digital forensics",
+        "Incident handling",
+        "SIEM engineering",
+        "Endpoint security monitoring"
+      ]
+    },
+    {
+      "title": "Benign",
+      "code": "benign",
+      "url": "https://tryhackme.com/room/benign",
+      "description": "Challenge room to investigate a compromised host.",
+      "difficulty": "medium",
+      "type": "challenge",
+      "minutes": 150,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Web",
+        "Splunk",
+        "Security analysis",
+        "Security operations",
+        "Threat hunting",
+        "SIEM engineering"
       ]
     },
     {
@@ -471,39 +910,662 @@
       ]
     },
     {
-      "title": "Simple CTF",
-      "code": "easyctf",
-      "url": "https://tryhackme.com/room/easyctf",
-      "description": "Beginner level CTF.",
+      "title": "IDS Fundamentals",
+      "code": "idsfundamentals",
+      "url": "https://tryhackme.com/room/idsfundamentals",
+      "description": "Learn the fundamentals of IDS, along with the experience of working with Snort.",
       "difficulty": "easy",
-      "type": "challenge",
-      "minutes": 45,
+      "type": "walkthrough",
+      "minutes": 60,
       "pov": [
-        "Red"
+        "Blue"
       ],
       "tech": [
         "Linux",
-        "Web",
-        "Penetration testing",
-        "Vulnerability analysis"
+        "Snort",
+        "Incident response",
+        "Incident handling",
+        "Security operations"
       ]
     },
     {
-      "title": "Boiler CTF",
-      "code": "boilerctf2",
-      "url": "https://tryhackme.com/room/boilerctf2",
-      "description": "Intermediate level CTF.",
+      "title": "Windows Threat Detection 1",
+      "code": "windowsthreatdetection1",
+      "url": "https://tryhackme.com/room/windowsthreatdetection1",
+      "description": "Explore common Initial Access methods on Windows and learn how to detect them.",
       "difficulty": "medium",
-      "type": "challenge",
-      "minutes": 75,
+      "type": "walkthrough",
+      "minutes": 60,
       "pov": [
-        "Red"
+        "Blue"
+      ],
+      "tech": [
+        "Windows",
+        "Windows Event Viewer",
+        "Security analysis",
+        "Log analysis",
+        "Log correlation"
+      ]
+    },
+    {
+      "title": "Windows Threat Detection 2",
+      "code": "windowsthreatdetection2",
+      "url": "https://tryhackme.com/room/windowsthreatdetection2",
+      "description": "Discover how to detect and analyze the first steps of threat actors after breaching Windows.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Windows",
+        "Windows Event Viewer",
+        "Security analysis",
+        "Log correlation",
+        "Log analysis"
+      ]
+    },
+    {
+      "title": "Windows Threat Detection 3",
+      "code": "windowsthreatdetection3",
+      "url": "https://tryhackme.com/room/windowsthreatdetection3",
+      "description": "Learn how threat actors manage to maintain access to the breached Windows hosts.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Windows",
+        "Windows Event Viewer",
+        "Registry Editor",
+        "Security analysis",
+        "Log analysis",
+        "Log correlation"
+      ]
+    },
+    {
+      "title": "Linux Threat Detection 1",
+      "code": "linuxthreatdetection1",
+      "url": "https://tryhackme.com/room/linuxthreatdetection1",
+      "description": "Explore how attackers break into Linux systems and how you can detect this in logs.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Linux",
+        "Security analysis",
+        "Log analysis",
+        "Log correlation"
+      ]
+    },
+    {
+      "title": "Linux Threat Detection 2",
+      "code": "linuxthreatdetection2",
+      "url": "https://tryhackme.com/room/linuxthreatdetection2",
+      "description": "Explore the first actions of attackers after breaching a Linux server and learn how to detect them.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Linux",
+        "Security analysis",
+        "Log analysis",
+        "Log correlation"
+      ]
+    },
+    {
+      "title": "Linux Threat Detection 3",
+      "code": "linuxthreatdetection3",
+      "url": "https://tryhackme.com/room/linuxthreatdetection3",
+      "description": "Cover the last stages of attacks on Linux and learn how they look in system logs.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Linux",
+        "Security analysis",
+        "Log analysis",
+        "Log correlation"
+      ]
+    },
+    {
+      "title": "Living Off the Land Attacks",
+      "code": "livingoffthelandattacks",
+      "url": "https://tryhackme.com/room/livingoffthelandattacks",
+      "description": "Learn to detect and analyse Living Off the Land attacks using trusted Windows tools.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Windows",
+        "PowerShell",
+        "Malware analysis"
+      ]
+    },
+    {
+      "title": "Network Discovery Detection",
+      "code": "networkdiscoverydetection",
+      "url": "https://tryhackme.com/room/networkdiscoverydetection",
+      "description": "Understand how attackers discover assets in a network, and how to detect that activity.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Netcat",
+        "ELK Stack (Elasticsearch, Logstash, Kibana)",
+        "Port scanning"
+      ]
+    },
+    {
+      "title": "Man-in-the-Middle Detection",
+      "code": "mitmdetection",
+      "url": "https://tryhackme.com/room/mitmdetection",
+      "description": "Learn what a MITM attack is, and how to identify the footprints of this attack in network traffic.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Linux",
+        "Wireshark",
+        "Splunk",
+        "Network traffic analysis"
+      ]
+    },
+    {
+      "title": "Data Exfiltration Detection",
+      "code": "dataexfildetection",
+      "url": "https://tryhackme.com/room/dataexfildetection",
+      "description": "Learn how to detect data exfiltration attempts in various network channels.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Network traffic analysis",
+        "Threat hunting"
+      ]
+    },
+    {
+      "title": "Eviction",
+      "code": "eviction",
+      "url": "https://tryhackme.com/room/eviction",
+      "description": "Unearth the monster from under your bed.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 45,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Threat hunting",
+        "Incident response",
+        "Threat modelling"
+      ]
+    },
+    {
+      "title": "Summit",
+      "code": "summit",
+      "url": "https://tryhackme.com/room/summit",
+      "description": "Can you chase a simulated adversary up the Pyramid of Pain until they finally back down?",
+      "difficulty": "easy",
+      "type": "challenge",
+      "minutes": 30,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Linux",
+        "Detection engineering",
+        "Malware analysis"
+      ]
+    },
+    {
+      "title": "Monitoring Active Directory",
+      "code": "monitoringactivedirectory",
+      "url": "https://tryhackme.com/room/monitoringactivedirectory",
+      "description": "Learn to monitor Active Directory and find anomalies in high-volume logs.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Windows",
+        "Active Directory",
+        "Splunk",
+        "Group Policy Management Editor",
+        "Event Viewer",
+        "Audit Policy",
+        "GPO (Group Policy Objects)",
+        "Security operations",
+        "Threat hunting",
+        "Detection engineering",
+        "SIEM engineering",
+        "Identity and access management",
+        "Log analysis",
+        "Endpoint security monitoring"
+      ]
+    },
+    {
+      "title": "Detecting AD Initial Access",
+      "code": "detectingadinitialaccess",
+      "url": "https://tryhackme.com/room/detectingadinitialaccess",
+      "description": "Detect AD initial access attacks by analyzing IIS, NPS, and Windows Security logs.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Windows",
+        "Active Directory",
+        "Splunk",
+        "Security operations",
+        "Incident response",
+        "Threat hunting",
+        "Detection engineering",
+        "SIEM engineering",
+        "Identity and access management",
+        "Log analysis"
+      ]
+    },
+    {
+      "title": "Detecting AD Credential Attacks",
+      "code": "detectingadcredentialattacks",
+      "url": "https://tryhackme.com/room/detectingadcredentialattacks",
+      "description": "Detect Kerberoasting, AS-REP Roasting, LSASS dumping, DCSync, and NTDS.dit extraction in Splunk.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 90,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Windows",
+        "Active Directory",
+        "Splunk",
+        "Security operations",
+        "Threat hunting",
+        "Detection engineering",
+        "Kerberoasting",
+        "Log analysis",
+        "Credential harvesting",
+        "Log correlation"
+      ]
+    },
+    {
+      "title": "Detecting AD Lateral Movement",
+      "code": "detectingadlateralmovement",
+      "url": "https://tryhackme.com/room/detectingadlateralmovement",
+      "description": "Learn to detect SMB, PsExec, and RDP lateral movement through Windows Event Logs and Splunk.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Windows",
+        "Active Directory",
+        "Splunk",
+        "PsExec",
+        "Security operations",
+        "Incident response",
+        "Threat hunting",
+        "Detection engineering",
+        "SIEM engineering",
+        "Log analysis",
+        "Endpoint security monitoring"
+      ]
+    },
+    {
+      "title": "Detecting AD Post-Exploitation",
+      "code": "detectingadpostexploitation",
+      "url": "https://tryhackme.com/room/detectingadpostexploitation",
+      "description": "Discover how to detect post-exploitation activity in an Active Directory environment.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 90,
+      "pov": [
+        "Blue",
+        "Purple"
+      ],
+      "tech": [
+        "Active Directory",
+        "Splunk",
+        "Incident response",
+        "Incident handling",
+        "Detection engineering"
+      ]
+    },
+    {
+      "title": "M365 Monitoring Basics",
+      "code": "m365monitoringbasics",
+      "url": "https://tryhackme.com/room/m365monitoringbasics",
+      "description": "Learn the importance of Entra ID and M365 in modern SOC environments and explore their logs.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 45,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Azure",
+        "Splunk",
+        "Entra ID",
+        "Log analysis"
+      ]
+    },
+    {
+      "title": "Entra ID Monitoring",
+      "code": "entraidmonitoring",
+      "url": "https://tryhackme.com/room/entraidmonitoring",
+      "description": "Learn the main threats and defenses in Entra ID environments and how to detect them.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Splunk",
+        "Entra ID",
+        "Threat hunting",
+        "Log analysis"
+      ]
+    },
+    {
+      "title": "Network Traffic Basics",
+      "code": "networktrafficbasics",
+      "url": "https://tryhackme.com/room/networktrafficbasics",
+      "description": "Learn what network analysis is, why it is essential, how to collect network traffic and which tools are available.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Wireshark",
+        "Network traffic analysis"
+      ]
+    },
+    {
+      "title": "Wireshark: The Basics",
+      "code": "wiresharkthebasics",
+      "url": "https://tryhackme.com/room/wiresharkthebasics",
+      "description": "Learn the basics of Wireshark and how to analyse protocols and PCAPs.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Wireshark",
+        "Network traffic analysis",
+        "Security analysis"
+      ]
+    },
+    {
+      "title": "Wireshark: Packet Operations",
+      "code": "wiresharkpacketoperations",
+      "url": "https://tryhackme.com/room/wiresharkpacketoperations",
+      "description": "Learn the fundamentals of packet analysis with Wireshark and how to find the needle in the haystack!",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Wireshark",
+        "Network traffic analysis",
+        "Security analysis"
+      ]
+    },
+    {
+      "title": "Wireshark: Traffic Analysis",
+      "code": "wiresharktrafficanalysis",
+      "url": "https://tryhackme.com/room/wiresharktrafficanalysis",
+      "description": "Learn the basics of traffic analysis with Wireshark and how to find anomalies on your network!",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 120,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Nmap",
+        "Network traffic analysis",
+        "Security analysis",
+        "Port scanning"
+      ]
+    },
+    {
+      "title": "Snort",
+      "code": "snort",
+      "url": "https://tryhackme.com/room/snort",
+      "description": "Learn how to use Snort to detect real-time threats, analyse recorded traffic files and identify anomalies.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 120,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Linux",
+        "Snort",
+        "Wireshark",
+        "Detection engineering",
+        "Security analysis"
+      ]
+    },
+    {
+      "title": "NetworkMiner",
+      "code": "networkminer",
+      "url": "https://tryhackme.com/room/networkminer",
+      "description": "Learn how to use NetworkMiner to analyse recorded traffic files and practice network forensics activities.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Linux",
+        "Wireshark",
+        "Digital forensics",
+        "Network security engineering",
+        "Network troubleshooting",
+        "Incident response"
+      ]
+    },
+    {
+      "title": "Network Security Essentials",
+      "code": "networksecurityessentials",
+      "url": "https://tryhackme.com/room/networksecurityessentials",
+      "description": "Learn about key aspects of network security essentials and how to monitor and protect against adversaries.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Linux",
+        "Splunk",
+        "Log analysis",
+        "Network monitoring"
+      ]
+    },
+    {
+      "title": "Web Security Essentials",
+      "code": "websecurityessentials",
+      "url": "https://tryhackme.com/room/websecurityessentials",
+      "description": "Learn how the web works, common website security risks, and protections for a safer internet.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Web",
+        "Web application security"
+      ]
+    },
+    {
+      "title": "Detecting Web Attacks",
+      "code": "detectingwebattacks",
+      "url": "https://tryhackme.com/room/detectingwebattacks",
+      "description": "Explore web attacks and detection methods through log and network traffic analysis.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Web",
+        "Wireshark",
+        "Web application security",
+        "Log analysis",
+        "Network traffic analysis"
+      ]
+    },
+    {
+      "title": "Detecting Web Shells",
+      "code": "detectingwebshells",
+      "url": "https://tryhackme.com/room/detectingwebshells",
+      "description": "Explore web shell detection by analyzing logs, file systems, and network traffic.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
       ],
       "tech": [
         "Linux",
         "Web",
-        "Penetration testing",
+        "Wireshark",
+        "Log analysis",
+        "Threat hunting"
+      ]
+    },
+    {
+      "title": "Detecting Web DDoS",
+      "code": "detectingwebddos",
+      "url": "https://tryhackme.com/room/detectingwebddos",
+      "description": "Explore denial-of-service attacks, detection techniques, and strategies for protection.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Web",
+        "Splunk",
+        "Web application security",
+        "Log analysis"
+      ]
+    },
+    {
+      "title": "Guided Pentest: Web",
+      "code": "guidedpentestweb",
+      "url": "https://tryhackme.com/room/guidedpentestweb",
+      "description": "Learn web app pentesting by chaining vulnerabilities from recon to full server compromise.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Red"
+      ],
+      "tech": [
+        "Web",
+        "Nmap",
+        "Gobuster",
         "Application penetration testing"
+      ]
+    },
+    {
+      "title": "Pyramid Of Pain",
+      "code": "pyramidofpainax",
+      "url": "https://tryhackme.com/room/pyramidofpainax",
+      "description": "Learn what the Pyramid of Pain is and how it ranks indicators by how painful they are for an adversary to change.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 30,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Windows",
+        "Snort",
+        "Security analysis",
+        "Security operations",
+        "Incident response",
+        "Packet analysis"
+      ]
+    },
+    {
+      "title": "Cyber Kill Chain",
+      "code": "cyberkillchainzmt",
+      "url": "https://tryhackme.com/room/cyberkillchainzmt",
+      "description": "The Cyber Kill Chain framework is designed for identification and prevention of the network intrusions. You will learn what the adversaries need to do in order to achieve their goals.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 45,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Crowdstrike",
+        "Incident management",
+        "Incident handling",
+        "OSINT"
+      ]
+    },
+    {
+      "title": "Unified Kill Chain",
+      "code": "unifiedkillchain",
+      "url": "https://tryhackme.com/room/unifiedkillchain",
+      "description": "The Unified Kill Chain is a framework which establishes the phases of an attack, and a means of identifying and mitigating risk to IT assets.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 40,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Threat modelling",
+        "Security analysis"
       ]
     },
     {
@@ -527,6 +1589,76 @@
         "Security analysis",
         "Incident response",
         "Threat hunting"
+      ]
+    },
+    {
+      "title": "Intro to Cyber Threat Intel",
+      "code": "cyberthreatintel",
+      "url": "https://tryhackme.com/room/cyberthreatintel",
+      "description": "Introducing cyber threat intelligence and related topics, such as relevant standards and frameworks.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 45,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "MITRE ATT&CK Framework",
+        "Cyber threat intelligence",
+        "Threat intelligence"
+      ]
+    },
+    {
+      "title": "File and Hash Threat Intel",
+      "code": "fileandhashthreatintel",
+      "url": "https://tryhackme.com/room/fileandhashthreatintel",
+      "description": "This room seeks to teach on enriching file and hash artefacts using threat intelligence.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 64,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "VirusTotal",
+        "Hybrid Analysis",
+        "Cyber threat intelligence"
+      ]
+    },
+    {
+      "title": "IP and Domain Threat Intel",
+      "code": "ipanddomainthreatintel",
+      "url": "https://tryhackme.com/room/ipanddomainthreatintel",
+      "description": "A look into enriching IP and domain insights with open source threat intelligence.",
+      "difficulty": "medium",
+      "type": "walkthrough",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Web",
+        "Cisco Talos Intelligence",
+        "VirusTotal",
+        "Cyber threat intelligence"
+      ]
+    },
+    {
+      "title": "Invite Only",
+      "code": "invite-only",
+      "url": "https://tryhackme.com/room/invite-only",
+      "description": "Extract insight from a set of flagged artefacts, and distil the information into usable threat intelligence.",
+      "difficulty": "easy",
+      "type": "challenge",
+      "minutes": 60,
+      "pov": [
+        "Blue"
+      ],
+      "tech": [
+        "Web",
+        "VirusTotal",
+        "Cyber threat intelligence",
+        "Domain enumeration"
       ]
     },
     {
@@ -635,74 +1767,6 @@
       ]
     },
     {
-      "title": "Unified Kill Chain",
-      "code": "unifiedkillchain",
-      "url": "https://tryhackme.com/room/unifiedkillchain",
-      "description": "The Unified Kill Chain is a framework which establishes the phases of an attack, and a means of identifying and mitigating risk to IT assets.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 40,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Threat modelling",
-        "Security analysis"
-      ]
-    },
-    {
-      "title": "Wireshark: The Basics",
-      "code": "wiresharkthebasics",
-      "url": "https://tryhackme.com/room/wiresharkthebasics",
-      "description": "Learn the basics of Wireshark and how to analyse protocols and PCAPs.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Wireshark",
-        "Network traffic analysis",
-        "Security analysis"
-      ]
-    },
-    {
-      "title": "Wireshark: Packet Operations",
-      "code": "wiresharkpacketoperations",
-      "url": "https://tryhackme.com/room/wiresharkpacketoperations",
-      "description": "Learn the fundamentals of packet analysis with Wireshark and how to find the needle in the haystack!",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Wireshark",
-        "Network traffic analysis",
-        "Security analysis"
-      ]
-    },
-    {
-      "title": "Wireshark: Traffic Analysis",
-      "code": "wiresharktrafficanalysis",
-      "url": "https://tryhackme.com/room/wiresharktrafficanalysis",
-      "description": "Learn the basics of traffic analysis with Wireshark and how to find anomalies on your network!",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 120,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Nmap",
-        "Network traffic analysis",
-        "Security analysis",
-        "Port scanning"
-      ]
-    },
-    {
       "title": "Snapped Phish-ing Line",
       "code": "snappedphishingline",
       "url": "https://tryhackme.com/room/snappedphishingline",
@@ -718,350 +1782,6 @@
         "Digital forensics",
         "Phishing",
         "Email analysis"
-      ]
-    },
-    {
-      "title": "Eviction",
-      "code": "eviction",
-      "url": "https://tryhackme.com/room/eviction",
-      "description": "Unearth the monster from under your bed.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 45,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Threat hunting",
-        "Incident response",
-        "Threat modelling"
-      ]
-    },
-    {
-      "title": "Summit",
-      "code": "summit",
-      "url": "https://tryhackme.com/room/summit",
-      "description": "Can you chase a simulated adversary up the Pyramid of Pain until they finally back down?",
-      "difficulty": "easy",
-      "type": "challenge",
-      "minutes": 30,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Linux",
-        "Detection engineering",
-        "Malware analysis"
-      ]
-    },
-    {
-      "title": "Network Traffic Basics",
-      "code": "networktrafficbasics",
-      "url": "https://tryhackme.com/room/networktrafficbasics",
-      "description": "Learn what network analysis is, why it is essential, how to collect network traffic and which tools are available.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Wireshark",
-        "Network traffic analysis"
-      ]
-    },
-    {
-      "title": "Snort",
-      "code": "snort",
-      "url": "https://tryhackme.com/room/snort",
-      "description": "Learn how to use Snort to detect real-time threats, analyse recorded traffic files and identify anomalies.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 120,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Linux",
-        "Snort",
-        "Wireshark",
-        "Detection engineering",
-        "Security analysis"
-      ]
-    },
-    {
-      "title": "NetworkMiner",
-      "code": "networkminer",
-      "url": "https://tryhackme.com/room/networkminer",
-      "description": "Learn how to use NetworkMiner to analyse recorded traffic files and practice network forensics activities.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Linux",
-        "Wireshark",
-        "Digital forensics",
-        "Network security engineering",
-        "Network troubleshooting",
-        "Incident response"
-      ]
-    },
-    {
-      "title": "IDS Fundamentals",
-      "code": "idsfundamentals",
-      "url": "https://tryhackme.com/room/idsfundamentals",
-      "description": "Learn the fundamentals of IDS, along with the experience of working with Snort.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Linux",
-        "Snort",
-        "Incident response",
-        "Incident handling",
-        "Security operations"
-      ]
-    },
-    {
-      "title": "Windows Logging for SOC",
-      "code": "windowsloggingforsoc",
-      "url": "https://tryhackme.com/room/windowsloggingforsoc",
-      "description": "Start your Windows monitoring journey by learning how to use system logs to detect threats.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Windows",
-        "Windows Event Viewer",
-        "Security analysis",
-        "Log analysis",
-        "Log correlation"
-      ]
-    },
-    {
-      "title": "Windows Threat Detection 1",
-      "code": "windowsthreatdetection1",
-      "url": "https://tryhackme.com/room/windowsthreatdetection1",
-      "description": "Explore common Initial Access methods on Windows and learn how to detect them.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Windows",
-        "Windows Event Viewer",
-        "Security analysis",
-        "Log analysis",
-        "Log correlation"
-      ]
-    },
-    {
-      "title": "Windows Threat Detection 2",
-      "code": "windowsthreatdetection2",
-      "url": "https://tryhackme.com/room/windowsthreatdetection2",
-      "description": "Discover how to detect and analyze the first steps of threat actors after breaching Windows.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Windows",
-        "Windows Event Viewer",
-        "Security analysis",
-        "Log correlation",
-        "Log analysis"
-      ]
-    },
-    {
-      "title": "Detecting Web Shells",
-      "code": "detectingwebshells",
-      "url": "https://tryhackme.com/room/detectingwebshells",
-      "description": "Explore web shell detection by analyzing logs, file systems, and network traffic.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Linux",
-        "Web",
-        "Wireshark",
-        "Log analysis",
-        "Threat hunting"
-      ]
-    },
-    {
-      "title": "Windows Threat Detection 3",
-      "code": "windowsthreatdetection3",
-      "url": "https://tryhackme.com/room/windowsthreatdetection3",
-      "description": "Learn how threat actors manage to maintain access to the breached Windows hosts.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Windows",
-        "Windows Event Viewer",
-        "Registry Editor",
-        "Security analysis",
-        "Log analysis",
-        "Log correlation"
-      ]
-    },
-    {
-      "title": "Web Security Essentials",
-      "code": "websecurityessentials",
-      "url": "https://tryhackme.com/room/websecurityessentials",
-      "description": "Learn how the web works, common website security risks, and protections for a safer internet.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Web",
-        "Web application security"
-      ]
-    },
-    {
-      "title": "Network Discovery Detection",
-      "code": "networkdiscoverydetection",
-      "url": "https://tryhackme.com/room/networkdiscoverydetection",
-      "description": "Understand how attackers discover assets in a network, and how to detect that activity.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Netcat",
-        "ELK Stack (Elasticsearch, Logstash, Kibana)",
-        "Port scanning"
-      ]
-    },
-    {
-      "title": "Linux Logging for SOC",
-      "code": "linuxloggingforsoc",
-      "url": "https://tryhackme.com/room/linuxloggingforsoc",
-      "description": "Explore key Linux log sources and learn how to use them in your SOC triage.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 45,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Linux",
-        "Log analysis",
-        "Log correlation",
-        "Security analysis"
-      ]
-    },
-    {
-      "title": "Detecting Web Attacks",
-      "code": "detectingwebattacks",
-      "url": "https://tryhackme.com/room/detectingwebattacks",
-      "description": "Explore web attacks and detection methods through log and network traffic analysis.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Web",
-        "Wireshark",
-        "Web application security",
-        "Log analysis",
-        "Network traffic analysis"
-      ]
-    },
-    {
-      "title": "Man-in-the-Middle Detection",
-      "code": "mitmdetection",
-      "url": "https://tryhackme.com/room/mitmdetection",
-      "description": "Learn what a MITM attack is, and how to identify the footprints of this attack in network traffic.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Linux",
-        "Wireshark",
-        "Splunk",
-        "Network traffic analysis"
-      ]
-    },
-    {
-      "title": "Network Security Essentials",
-      "code": "networksecurityessentials",
-      "url": "https://tryhackme.com/room/networksecurityessentials",
-      "description": "Learn about key aspects of network security essentials and how to monitor and protect against adversaries.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Linux",
-        "Splunk",
-        "Log analysis",
-        "Network monitoring"
-      ]
-    },
-    {
-      "title": "Detecting Web DDoS",
-      "code": "detectingwebddos",
-      "url": "https://tryhackme.com/room/detectingwebddos",
-      "description": "Explore denial-of-service attacks, detection techniques, and strategies for protection.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Web",
-        "Splunk",
-        "Web application security",
-        "Log analysis"
-      ]
-    },
-    {
-      "title": "Data Exfiltration Detection",
-      "code": "dataexfildetection",
-      "url": "https://tryhackme.com/room/dataexfildetection",
-      "description": "Learn how to detect data exfiltration attempts in various network channels.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Network traffic analysis",
-        "Threat hunting"
       ]
     },
     {
@@ -1087,153 +1807,6 @@
       ]
     },
     {
-      "title": "ItsyBitsy",
-      "code": "itsybitsy",
-      "url": "https://tryhackme.com/room/itsybitsy",
-      "description": "Put your ELK knowledge together and investigate an incident.",
-      "difficulty": "medium",
-      "type": "challenge",
-      "minutes": 30,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Linux",
-        "Splunk",
-        "Security operations",
-        "Malware analysis",
-        "SIEM engineering"
-      ]
-    },
-    {
-      "title": "Benign",
-      "code": "benign",
-      "url": "https://tryhackme.com/room/benign",
-      "description": "Challenge room to investigate a compromised host.",
-      "difficulty": "medium",
-      "type": "challenge",
-      "minutes": 150,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Web",
-        "Splunk",
-        "Security analysis",
-        "Security operations",
-        "Threat hunting",
-        "SIEM engineering"
-      ]
-    },
-    {
-      "title": "Intro to Cyber Threat Intel",
-      "code": "cyberthreatintel",
-      "url": "https://tryhackme.com/room/cyberthreatintel",
-      "description": "Introducing cyber threat intelligence and related topics, such as relevant standards and frameworks.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 45,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "MITRE ATT&CK Framework",
-        "Cyber threat intelligence",
-        "Threat intelligence"
-      ]
-    },
-    {
-      "title": "File and Hash Threat Intel",
-      "code": "fileandhashthreatintel",
-      "url": "https://tryhackme.com/room/fileandhashthreatintel",
-      "description": "This room seeks to teach on enriching file and hash artefacts using threat intelligence.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 64,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "VirusTotal",
-        "Hybrid Analysis",
-        "Cyber threat intelligence"
-      ]
-    },
-    {
-      "title": "Log Analysis with SIEM",
-      "code": "loganalysiswithsiem",
-      "url": "https://tryhackme.com/room/loganalysiswithsiem",
-      "description": "Learn how SIEM solutions can be used to detect and analyse malicious behaviour.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 90,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Windows",
-        "Linux",
-        "Web",
-        "Splunk",
-        "Log analysis",
-        "Log correlation"
-      ]
-    },
-    {
-      "title": "IP and Domain Threat Intel",
-      "code": "ipanddomainthreatintel",
-      "url": "https://tryhackme.com/room/ipanddomainthreatintel",
-      "description": "A look into enriching IP and domain insights with open source threat intelligence.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Web",
-        "Cisco Talos Intelligence",
-        "VirusTotal",
-        "Cyber threat intelligence"
-      ]
-    },
-    {
-      "title": "Invite Only",
-      "code": "invite-only",
-      "url": "https://tryhackme.com/room/invite-only",
-      "description": "Extract insight from a set of flagged artefacts, and distil the information into usable threat intelligence.",
-      "difficulty": "easy",
-      "type": "challenge",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Web",
-        "VirusTotal",
-        "Cyber threat intelligence",
-        "Domain enumeration"
-      ]
-    },
-    {
-      "title": "Linux Threat Detection 1",
-      "code": "linuxthreatdetection1",
-      "url": "https://tryhackme.com/room/linuxthreatdetection1",
-      "description": "Explore how attackers break into Linux systems and how you can detect this in logs.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Linux",
-        "Security analysis",
-        "Log analysis",
-        "Log correlation"
-      ]
-    },
-    {
       "title": "Malware Classification",
       "code": "malwareclassification",
       "url": "https://tryhackme.com/room/malwareclassification",
@@ -1246,45 +1819,6 @@
       ],
       "tech": [
         "Malware analysis"
-      ]
-    },
-    {
-      "title": "Alert Triage With Splunk",
-      "code": "alerttriagewithsplunk",
-      "url": "https://tryhackme.com/room/alerttriagewithsplunk",
-      "description": "Use Splunk to triage alerts and investigate malicious activity efficiently.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Windows",
-        "Linux",
-        "Web",
-        "Splunk",
-        "Log analysis",
-        "Log correlation",
-        "SIEM engineering"
-      ]
-    },
-    {
-      "title": "Linux Threat Detection 2",
-      "code": "linuxthreatdetection2",
-      "url": "https://tryhackme.com/room/linuxthreatdetection2",
-      "description": "Explore the first actions of attackers after breaching a Linux server and learn how to detect them.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Linux",
-        "Security analysis",
-        "Log analysis",
-        "Log correlation"
       ]
     },
     {
@@ -1301,131 +1835,6 @@
       "tech": [
         "Windows",
         "Malware analysis"
-      ]
-    },
-    {
-      "title": "Linux Threat Detection 3",
-      "code": "linuxthreatdetection3",
-      "url": "https://tryhackme.com/room/linuxthreatdetection3",
-      "description": "Cover the last stages of attacks on Linux and learn how they look in system logs.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Linux",
-        "Security analysis",
-        "Log analysis",
-        "Log correlation"
-      ]
-    },
-    {
-      "title": "Alert Triage With Elastic",
-      "code": "alerttriagewithelastic",
-      "url": "https://tryhackme.com/room/alerttriagewithelastic",
-      "description": "Investigate alerts with Elastic by analyzing logs and spotting threats.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Web",
-        "Windows",
-        "ELK Stack (Elasticsearch, Logstash, Kibana)",
-        "Log analysis"
-      ]
-    },
-    {
-      "title": "Living Off the Land Attacks",
-      "code": "livingoffthelandattacks",
-      "url": "https://tryhackme.com/room/livingoffthelandattacks",
-      "description": "Learn to detect and analyse Living Off the Land attacks using trusted Windows tools.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Windows",
-        "PowerShell",
-        "Malware analysis"
-      ]
-    },
-    {
-      "title": "Tor",
-      "code": "torforbeginners",
-      "url": "https://tryhackme.com/room/torforbeginners",
-      "description": "A beginner-oriented guide on using the Tor network.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 45,
-      "pov": [
-        "Red"
-      ],
-      "tech": [
-        "Red teaming"
-      ]
-    },
-    {
-      "title": "Google Dorking",
-      "code": "googledorking",
-      "url": "https://tryhackme.com/room/googledorking",
-      "description": "Explaining how search engines work and leveraging them into finding hidden content!",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 45,
-      "pov": [
-        "Red"
-      ],
-      "tech": [
-        "Web",
-        "OSINT",
-        "Information gathering"
-      ]
-    },
-    {
-      "title": "Metasploit: Exploitation",
-      "code": "metasploitexploitation",
-      "url": "https://tryhackme.com/room/metasploitexploitation",
-      "description": "Using Metasploit for scanning, vulnerability assessment and exploitation.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 20,
-      "pov": [
-        "Red"
-      ],
-      "tech": [
-        "Nmap",
-        "msfdb",
-        "Penetration testing",
-        "Red teaming",
-        "Vulnerability analysis",
-        "Exploit development"
-      ]
-    },
-    {
-      "title": "Metasploit: Introduction",
-      "code": "metasploitintro",
-      "url": "https://tryhackme.com/room/metasploitintro",
-      "description": "An introduction to the main components of the Metasploit Framework.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 30,
-      "pov": [
-        "Red"
-      ],
-      "tech": [
-        "Linux",
-        "pattern_create",
-        "pattern_offset",
-        "Red teaming",
-        "Vulnerability analysis",
-        "Exploit development"
       ]
     },
     {
@@ -1448,24 +1857,6 @@
       ]
     },
     {
-      "title": "Splunk: Exploring SPL",
-      "code": "splunkexploringspl",
-      "url": "https://tryhackme.com/room/splunkexploringspl",
-      "description": "Learn and explore Splunk's Search Processing Language.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Windows",
-        "Splunk",
-        "Security analysis",
-        "Log analysis"
-      ]
-    },
-    {
       "title": "Boogeyman 1",
       "code": "boogeyman1",
       "url": "https://tryhackme.com/room/boogeyman1",
@@ -1485,54 +1876,6 @@
         "Security analysis",
         "Network traffic analysis",
         "Email analysis"
-      ]
-    },
-    {
-      "title": "Splunk: Setting up a SOC Lab",
-      "code": "splunklab",
-      "url": "https://tryhackme.com/room/splunklab",
-      "description": "Set up a Splunk lab and ingest logs with the Universal Forwarder.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Windows",
-        "Linux",
-        "Splunk",
-        "Security operations",
-        "Incident response",
-        "Incident management",
-        "Detection engineering",
-        "SIEM engineering",
-        "Log management",
-        "Endpoint security monitoring",
-        "Log correlation"
-      ]
-    },
-    {
-      "title": "Intro to Logs",
-      "code": "introtologs",
-      "url": "https://tryhackme.com/room/introtologs",
-      "description": "Learn the fundamentals of logging, data sources, collection methods and principles to step into the log analysis world.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 30,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Linux",
-        "Log Viewer",
-        "Security analysis",
-        "Security operations",
-        "Incident response",
-        "Digital forensics",
-        "Incident handling",
-        "Log management",
-        "Log correlation"
       ]
     },
     {
@@ -1574,175 +1917,130 @@
       ]
     },
     {
-      "title": "Report Writing for SOC L2",
-      "code": "reportwritingsocl2",
-      "url": "https://tryhackme.com/room/reportwritingsocl2",
-      "description": "Explore a vital skill for any senior role in a SOC: report writing.",
+      "title": "Offensive Security Intro",
+      "code": "offensivesecurityintroc101",
+      "url": "https://tryhackme.com/room/offensivesecurityintroc101",
+      "description": "Introducing offensive security, where you will test the security of FakeBank's systems.",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 15,
+      "pov": [
+        "Red"
+      ],
+      "tech": [
+        "Linux",
+        "Web",
+        "dirb",
+        "DirBuster",
+        "Enumeration"
+      ]
+    },
+    {
+      "title": "Simple CTF",
+      "code": "easyctf",
+      "url": "https://tryhackme.com/room/easyctf",
+      "description": "Beginner level CTF.",
+      "difficulty": "easy",
+      "type": "challenge",
+      "minutes": 45,
+      "pov": [
+        "Red"
+      ],
+      "tech": [
+        "Linux",
+        "Web",
+        "Penetration testing",
+        "Vulnerability analysis"
+      ]
+    },
+    {
+      "title": "Boiler CTF",
+      "code": "boilerctf2",
+      "url": "https://tryhackme.com/room/boilerctf2",
+      "description": "Intermediate level CTF.",
+      "difficulty": "medium",
+      "type": "challenge",
+      "minutes": 75,
+      "pov": [
+        "Red"
+      ],
+      "tech": [
+        "Linux",
+        "Web",
+        "Penetration testing",
+        "Application penetration testing"
+      ]
+    },
+    {
+      "title": "Metasploit: Introduction",
+      "code": "metasploitintro",
+      "url": "https://tryhackme.com/room/metasploitintro",
+      "description": "An introduction to the main components of the Metasploit Framework.",
       "difficulty": "easy",
       "type": "walkthrough",
       "minutes": 30,
       "pov": [
-        "Blue"
+        "Red"
       ],
       "tech": [
-        "Security analysis",
-        "Communication",
-        "SOC",
-        "Report writing"
+        "Linux",
+        "pattern_create",
+        "pattern_offset",
+        "Red teaming",
+        "Vulnerability analysis",
+        "Exploit development"
       ]
     },
     {
-      "title": "Guided Pentest: Web",
-      "code": "guidedpentestweb",
-      "url": "https://tryhackme.com/room/guidedpentestweb",
-      "description": "Learn web app pentesting by chaining vulnerabilities from recon to full server compromise.",
+      "title": "Metasploit: Exploitation",
+      "code": "metasploitexploitation",
+      "url": "https://tryhackme.com/room/metasploitexploitation",
+      "description": "Using Metasploit for scanning, vulnerability assessment and exploitation.",
       "difficulty": "easy",
       "type": "walkthrough",
-      "minutes": 60,
+      "minutes": 20,
+      "pov": [
+        "Red"
+      ],
+      "tech": [
+        "Nmap",
+        "msfdb",
+        "Penetration testing",
+        "Red teaming",
+        "Vulnerability analysis",
+        "Exploit development"
+      ]
+    },
+    {
+      "title": "Google Dorking",
+      "code": "googledorking",
+      "url": "https://tryhackme.com/room/googledorking",
+      "description": "Explaining how search engines work and leveraging them into finding hidden content!",
+      "difficulty": "easy",
+      "type": "walkthrough",
+      "minutes": 45,
       "pov": [
         "Red"
       ],
       "tech": [
         "Web",
-        "Nmap",
-        "Gobuster",
-        "Application penetration testing"
+        "OSINT",
+        "Information gathering"
       ]
     },
     {
-      "title": "Defensive Security Trends",
-      "code": "defensivesecuritytrends",
-      "url": "https://tryhackme.com/room/defensivesecuritytrends",
-      "description": "Explore the modern security landscape and learn from emerging trends.",
+      "title": "Tor",
+      "code": "torforbeginners",
+      "url": "https://tryhackme.com/room/torforbeginners",
+      "description": "A beginner-oriented guide on using the Tor network.",
       "difficulty": "easy",
       "type": "walkthrough",
       "minutes": 45,
       "pov": [
-        "Blue"
+        "Red"
       ],
       "tech": [
-        "Threat intelligence",
-        "Defensive security"
-      ]
-    },
-    {
-      "title": "Senior Security Analyst Intro",
-      "code": "seniorsecanalystintro",
-      "url": "https://tryhackme.com/room/seniorsecanalystintro",
-      "description": "Explore the duties and exciting opportunities of a SOC Level 2 analyst.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 30,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Security analysis"
-      ]
-    },
-    {
-      "title": "SOC L2 Alert Triage",
-      "code": "socl2alerttriage",
-      "url": "https://tryhackme.com/room/socl2alerttriage",
-      "description": "Learn how to triage escalated alerts and respond to cyber threats.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 45,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Security analysis"
-      ]
-    },
-    {
-      "title": "Elastic: Query Languages",
-      "code": "advancedelkqueries",
-      "url": "https://tryhackme.com/room/advancedelkqueries",
-      "description": "Search large datasets efficiently with advanced queries in Kibana.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "ELK Stack",
-        "RegExr",
-        "Security analysis",
-        "Incident response",
-        "Digital forensics",
-        "SIEM engineering",
-        "Endpoint security monitoring"
-      ]
-    },
-    {
-      "title": "Splunk: Dashboards and Reports",
-      "code": "splunkdashboardsandreports",
-      "url": "https://tryhackme.com/room/splunkdashboardsandreports",
-      "description": "Explore reports, alerts, and dashboards with Splunk.",
-      "difficulty": "easy",
-      "type": "walkthrough",
-      "minutes": 45,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Splunk",
-        "Security operations",
-        "Incident response",
-        "Incident management",
-        "Detection engineering",
-        "SIEM engineering",
-        "Log management",
-        "Endpoint security monitoring",
-        "Log correlation"
-      ]
-    },
-    {
-      "title": "Splunk: Data Manipulation",
-      "code": "splunkdatamanipulation",
-      "url": "https://tryhackme.com/room/splunkdatamanipulation",
-      "description": "Learn how to parse and manipulate data in Splunk.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 90,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Splunk",
-        "Security operations",
-        "Incident response",
-        "Incident management",
-        "Detection engineering",
-        "SIEM engineering",
-        "Log management",
-        "Endpoint security monitoring",
-        "Log correlation"
-      ]
-    },
-    {
-      "title": "Fixit",
-      "code": "fixit",
-      "url": "https://tryhackme.com/room/fixit",
-      "description": "Fix the log parsing issue and analyze the logs in Splunk.",
-      "difficulty": "medium",
-      "type": "walkthrough",
-      "minutes": 60,
-      "pov": [
-        "Blue"
-      ],
-      "tech": [
-        "Linux",
-        "Security operations",
-        "Security analysis",
-        "Incident response",
-        "Detection engineering",
-        "SIEM engineering",
-        "Log management",
-        "System administration",
-        "Log correlation"
+        "Red teaming"
       ]
     }
   ]
